@@ -62,7 +62,7 @@
 - Navigate to the project directory
     - `cd <project-directory>`
 - Install the dependencies
-    - Node.js -> `npm install`
+    - Node.js -> `npm install` . Run this command inside both `client` and `server` directory.
     - Open terminal on your code editor and navigate to current directory.
       - **For Client** : Run `cd client` and afterwards run command  `npm run dev`. A url will be generated on your terminal. `Click + Enter` to open the website.
     - Open terminal on your code and navigate to SERVER directory.
