@@ -14,8 +14,7 @@ const makePayment = asyncHandler(async (req, res) => {
     const { amount, bookingId ,qrcode} = req.body;
     try {
         const message = await client.messages.create({
-            body: `Your booking is confirmed. Thank you for booking with us! Your booking Id : ${bookingId} and amount paid is ${amount}`,
-            body: `You can access the QR code below to access your booking details: ${qrcode}`,
+            body: `Your booking is confirmed. Thank you for booking with us! Your booking Id : ${bookingId} and amount paid is ${amount}.You can access the QR code below to access your booking details: ${qrcode}` ,
             from: 'whatsapp:+14155238886',
             to: 'whatsapp:+918882347814' 
         });
