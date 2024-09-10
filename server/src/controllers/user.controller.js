@@ -17,7 +17,7 @@ const makePayment = asyncHandler(async (req, res) => {
             body: `Your booking is confirmed. Thank you for booking with us! Your booking Id : ${bookingId} and amount paid is ${amount}.You can access the QR code below to access your booking details: ${qrcode}` ,
             from: 'whatsapp:+14155238886',
             to: 'whatsapp:+918882347814' 
-        });
+        }); 
         console.log(message.sid);
         res.status(200).json({
             success: true,
